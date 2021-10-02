@@ -24,11 +24,11 @@
 - [x] UI: color3/4, button, list, slider, toggle, checkbox, editbox, dialog, image, menus.
 - [x] Math: rand, noise, ease, vec2/3/4, mat33/34/44, quat.
 - [x] Geometry: ray, line, plane, aabb, sphere, capsule, triangle, poly and frustum.
-- [x] Image: JPG, PNG, TGA, BMP, PSD, HDR, PIC and PNM.
-- [x] Texture: R, RG, RGB, RGBA, Depth and BC1/2/3.
+- [x] Image: JPG, PNG, TGA, BMP, PSD, HDR, PIC and PNM. KTX/2, PVR, DDS, ASTC.
+- [x] Texture: Depth, R, RG, RGB, RGBA, BC1/2/3/4/5/6/7, PVRI/II, ETC1/2, ASTC.
 - [x] Audio: WAV, MOD, XM, FLAC, OGG, MP1, MP3, and MID.
 - [x] Video: MP4, MPG, OGV, MKV, WMV and AVI.
-- [x] Model: IQM, GLTF/2, FBX, OBJ, DAE, BLEND, MD3, MD5, MS3D, SMD, X, 3DS, BVH, DXF, LWO.
+- [x] Model: IQM/E, GLTF/2, FBX, OBJ, DAE, BLEND, MD3/5, MS3D, SMD, X, 3DS, BVH, DXF, LWO.
 - [x] Render: 2D Sprites, spritesheets and batching.
 - [x] Render: 3D Anims, skeletal anims and hardware skinning.
 - [x] Render: 3D Debugdraw, batching and vectorial font.
@@ -51,19 +51,19 @@
 - [ ] Math: quat2, bezier, catmull.
 - [ ] Level editor: gizmos✱, scene tree, property editor, load/save, undo/redo, copy/paste.
 - [ ] Level objects: volumes✱, triggers, platforms, streaming.
-- [ ] Script: DLL✱ (module->plugin/sys), Lua✱, Luajit✱, Teal and TypeScript.
+- [ ] Script: DLL✱ (module->plugin/sys), Lua✱, Luajit✱, Teal✱ and TypeScript.
 - [ ] Script: Refl/meta binding tool (during cook stage).
 - [ ] Pipeline: Extend: shaders, bindings, textures. Per-platform, per-type, per-asset options.
-- [ ] Pipeline: GIF, SFXR, BC4/5/6/7, DDS, KTX, PVR, PKM, ETC.
+- [ ] Pipeline: GIF, SFXR, PKM.
 - [ ] Pipeline: Atlassing (sprite/lightmaps). Fit packing (fonts/sprites).
-- [ ] Pipeline: Make asset pipeline configurable (maybe move/override logic to external scripts?).
+- [ ] Pipeline: Make asset pipeline configurable (move/extend logic to external fwk.ini scripts).
 - [ ] Maybe: Tiled maps and 2D spines.
 - [ ] Maybe: Animation pass.
 - [ ] Maybe: AI/Logic pass.
 - [ ] Maybe: Lighting/PBR pass.
 - [ ] Maybe: VM/ECS/Replication pass.
 - [ ] API: More examples. Also, less examples.
-- [ ] API: Discuss API and lock it.
+- [ ] API: Discuss API and freeze it.
 - [ ] API: Document everything.
 
 <!--
@@ -220,8 +220,11 @@ Any contribution to this repository is implicitly subjected to the same release 
 - [wwwtyro](https://github.com/wwwtyro/glsl-atmosphere), for nicest rayleigh/mie scattering shader around (CC0).
 
 ## Credits (Tools)
+- [Aaron Barany](https://github.com/akb825/Cuttlefish), for cuttefish (APACHE2).
 - [Assimp authors](https://github.com/assimp/assimp), for assimp (BSD3).
 - [Bernhard Schelling](https://github.com/schellingb/TinySoundFont), for tml.h (Zlib) and tsf.h (MIT).
+- [ffmpeg authors](https://www.ffmpeg.org/), for ffmpeg (LGPL21).
+- [Imagination](https://developer.imaginationtech.com/pvrtextool/), for pvrtextoocli (ITL).
 - [Krzysztof Gabis](https://github.com/kgabis/ape), for split.py/join.py (MIT).
 - [Lee Salzman](https://github.com/lsalzman/iqm/tree/5882b8c32fa622eba3861a621bb715d693573420/demo), for iqm.cpp (PD).
 - [Mattias Gustavsson](https://github.com/mattiasgustavsson/libs), for mid.h (PD).
